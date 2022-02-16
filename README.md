@@ -13,7 +13,9 @@ Collection of Python3 scripts for analysing and comparison of disulfides in oxid
 
 ## How to...
 ### Step 1: calculation of the Cys-Cys distances 
-
+```python
+yb_database_analysis.py -f input.txt
+```
 ### Step 2: averaging the Cys-Cys distances over multiple PDB-structures
 ### Step 3: structural alignment of ox and red proteins and RMSD calculation
 ### Step 4: calculation of solvent acessible surface area of Cys

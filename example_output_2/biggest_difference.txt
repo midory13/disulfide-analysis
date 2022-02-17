@@ -1,0 +1,1 @@
+#Protein 	 CysPair 	 Ox [A] 	 Red[A] 	 difference red-ox [A] 	 PDB OX 	 PDB RED

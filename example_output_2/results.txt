@@ -1,0 +1,27 @@
+Protein	pdbID-OX	pdbID_RED	CysRes1	CysRes1	SSdistance-OX	SSdistance-RED
+ RIBULOSE 1,5 BISPHOSPHATE CARBOXYLASE/OXYGENASE            	1RLDA		449	459	1.8836029260222455		
+ RIBULOSE 1,5 BISPHOSPHATE CARBOXYLASE/OXYGENASE            	1RLDB		449	459	1.9810039169013385		
+ RIBULOSE 1,5 BISPHOSPHATE CARBOXYLASE/OXYGENASE            		3RUBL	449	459		3.332779653496345
+ RIBULOSE 1,5 BISPHOSPHATE CARBOXYLASE/OXYGENASE            		1EJ7L	449	459		3.768159538688877
+ LACTOPEROXIDASE;                                           	2R5LA		6	167	1.910608515071829		
+ LACTOPEROXIDASE;                                           	5FF1A		6	167	2.0340000531488767		
+ LACTOPEROXIDASE;                                           	5FF1B		6	167	2.0397513557453126		
+ LACTOPEROXIDASE;                                           	4MSFA		6	167	2.129548125415938		
+ LACTOPEROXIDASE;                                           	4OEKA		6	167	2.0164176284046316		
+ LACTOPEROXIDASE;                                           	4IG5A		6	167	Could not download the pdb-file: 4IG5		
+ LACTOPEROXIDASE;                                           	4IG5B		6	167	Could not download the pdb-file: 4IG5		
+ LACTOPEROXIDASE;                                           	3RKEA		6	167	2.0386461012002486		
+ LACTOPEROXIDASE;                                           	2OJVA		6	167	2.0904152694084037		
+ LACTOPEROXIDASE;                                           	4N7AA		6	167	Could not download the pdb-file: 4N7A		
+ LACTOPEROXIDASE;                                           	4LJJA		6	167	Could not download the pdb-file: 4LJJ		
+ LACTOPEROXIDASE;                                           	3SXVA		6	167	2.027722367598093		
+ LACTOPEROXIDASE;                                           	5HPWA		6	167	1.9609399820788382		
+ LACTOPEROXIDASE;                                           	5HPWB		6	167	2.0434474078224403		
+ LACTOPEROXIDASE;                                           	5HPWD		6	167	1.8058657977075925		
+ LACTOPEROXIDASE;                                           	4QJQA		6	167	1.9913932993469696		
+ LACTOPEROXIDASE;                                           	4QYQA		6	167	Could not download the pdb-file: 4QYQ		
+ LACTOPEROXIDASE;                                           	4QYQB		6	167	Could not download the pdb-file: 4QYQ		
+ LACTOPEROXIDASE;                                           	4QYQD		6	167	Could not download the pdb-file: 4QYQ		
+ LACTOPEROXIDASE;                                           	3R55A		6	167	1.700238228022384		
+ LACTOPEROXIDASE;                                           		5HPWC	6	167		3.18085786488407
+ LACTOPEROXIDASE;                                           		4QYQC	6	167		Could not download the pdb-file: 4QYQ

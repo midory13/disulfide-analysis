@@ -59,7 +59,8 @@ The `step5_yb_neighbor-search.py` script is there for you to find all residues t
 For each entry, this script create a file with information about contacts found in that radius.
 Since it creates a single file for each entry, it is advisible to create a separate folder for these files (can be specified under --folder)
 The so created contact files can be further evaluated via `step6_yb_neighbor-search_part2.py` script
-Important note: the atom types of the sulfur that are supported are: SG, S, SG1, SG2, SD; other types will not be recognised
+
+**Important note:** the atom types of the sulfur that are supported are: SG, S, SG1, SG2, SD; other types will not be recognised
 
 If you use this script, please do not forget to cite us:
 Bodnar Y, Lillig CH, 2022, http://rcocf.de/

@@ -18,10 +18,10 @@ __status__ = "development"
 
 
 parser = argparse.ArgumentParser(
-    description='This script is there for you to find all residues that are neighbouring the sulfur of the target cystein (or methionine) in specified radius.'
-                +'For each entry, this script create a file with information about contacts found in the specified radius.'
-                +'Since it creates a single file for each entry, it is advisible to create a separate folder for these files [can be specified under --folder]'
-                +'The so created contact files can be further evaluated via yb_neighbor-search_part2.py script'
+    description= 'This script is there for you to find all residues that are neighbouring the sulfur of the target cystein (or methionine) in specified radius.\n'
+                +'For each entry, this script create a file with information about contacts found in the specified radius.\n'
+                +'Since it creates a single file for each entry, it is advisible to create a separate folder for these files [can be specified under --folder]\n'
+                +'The so created contact files can be further evaluated via yb_neighbor-search_part2.py script\n'
                 +'Important note: the atom types of the sulfur that are supported are: SG, S, SG1, SG2, SD; other types will not be recognised')
 parser.add_argument('-i', '--input', required=True, type=str,
                     help="Specify the input database. The file should contain three columns:" 

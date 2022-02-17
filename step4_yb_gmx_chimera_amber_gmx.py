@@ -19,17 +19,17 @@ __status__ = "development"
 
 
 parser = argparse.ArgumentParser(
-    description='Script for calculating the solvent acessible surface area of the given Cys residue (total and SASA of the sulfur) and total protein.'+
-                'This script uses following software: USCF Chimera (non-gui mode), Gromacs 2020.1 and AmberTools21'+
-                'The script is able to mutate Selenomethionine and pyroglutamic acid to methionine and glutamic acid, respectivelly.' + 
-                'Only residues standard to Amber99SB-ILDN force field are supported, make sure your protein does not have non-std amino acids' + 
-                'All additives from crystallographic experiments (inlc. solvent and ions) will not be considered and do not desturbe the calculations'+
-                'While the calculation, the script creates multiple files for every protein entry, including: ')
+    description='Script for calculating the solvent acessible surface area of the given Cys residue (total and SASA of the sulfur) and total protein.\n'+
+                'This script uses following software: USCF Chimera (non-gui mode), Gromacs 2020.1 and AmberTools21.\n'+
+                'The script is able to mutate Selenomethionine and pyroglutamic acid to methionine and glutamic acid, respectivelly.\n' + 
+                'Only residues standard to Amber99SB-ILDN force field are supported, make sure your protein does not have non-std amino acids.\n' + 
+                'All additives from crystallographic experiments (inlc. solvent and ions) will not be considered and do not desturbe the calculations.\n'+
+                'While the calculation, the script creates multiple files for every protein entry.\n')
 parser.add_argument('-i', '--input', required=False, type=str,
-                    help="Specify the input file. [default = database.dat] The file should contain three columns separated with tab (all following column will be ignored):"+
-                    "The first column of the file should contain the name of the protein, second -- PDB-id, third -- residue number." +
-                    "If your PDB structure contains several chains, you can select a specific chain by adding its id to the PDB-id: e.g. Chain A of 6h2v -> 6h2vA."+
-                    "If you do not specify the chain, the script will only search for the residue in the first chain occuring in the pdb file"+
+                    help="Specify the input file. [default = database.dat] The file should contain three columns separated with tab (all following column will be ignored):\n"+
+                    "The first column of the file should contain the name of the protein, second -- PDB-id, third -- residue number.\n" +
+                    "If your PDB structure contains several chains, you can select a specific chain by adding its id to the PDB-id: e.g. Chain A of 6h2v -> 6h2vA.\n"+
+                    "If you do not specify the chain, the script will only search for the residue in the first chain occuring in the pdb file.\n"+
                     "Please, make sure the protein names do not contain spaces!!")
 parser.add_argument('-o', '--output', required=False, type=str,
                     help="Specify the name of the output file [default = SASA_results.dat]")

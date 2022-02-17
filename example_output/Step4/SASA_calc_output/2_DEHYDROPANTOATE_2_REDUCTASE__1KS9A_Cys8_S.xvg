@@ -1,0 +1,26 @@
+# This file was created Thu Feb 17 11:46:56 2022
+# Created by:
+#               :-) GROMACS - gmx sasa, 2020.1-Ubuntu-2020.1-1 (-:
+# 
+# Executable:   /usr/bin/gmx
+# Data prefix:  /usr
+# Working dir:  /mnt/c/Users/YanaB/Documents/UNI-BYMidory/PhD/Experimental/Hogg_writing/git/example_files/example_output
+# Command line:
+#   gmx sasa -f SASA_calc_output/2_DEHYDROPANTOATE_2_REDUCTASE__1KS9A.gro -n SASA_calc_output/2_DEHYDROPANTOATE_2_REDUCTASE__1KS9A_Cys8.ndx -s SASA_calc_output/2_DEHYDROPANTOATE_2_REDUCTASE__1KS9A.tpr -surface Protein -output "r_8_&_S*" -o SASA_calc_output/2_DEHYDROPANTOATE_2_REDUCTASE__1KS9A_Cys8_S.xvg
+# gmx sasa is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "Solvent Accessible Surface"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Area (nm\S2\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total"
+@ s1 legend "r_8_&_S*"
+      0.000  132.287    0.000

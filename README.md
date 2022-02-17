@@ -62,5 +62,5 @@ The so created contact files can be further evaluated via `step6_yb_neighbor-sea
 
 **Important note:** the atom types of the sulfur that are supported are: SG, S, SG1, SG2, SD; other types will not be recognised
 
-If you use this script, please do not forget to cite us:
-Bodnar Y, Lillig CH, 2022, http://rcocf.de/
+:star: If you use this script, please do not forget to cite us:
+Bodnar Y, Lillig CH, 2022, http://rcocf.de/ :star:

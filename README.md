@@ -9,6 +9,9 @@ Collection of Python3 scripts for analysing and comparison of disulfides in oxid
 - [Gromacs (gmxapi)](https://manual.gromacs.org/documentation/2020.1/gmxapi/index.html)
 - [AmberTools](https://ambermd.org/AmberTools.php)
 - [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/)
+- R
+- [MutComp](https://github.com/WillyBruhn/MutComp)
+- [CompareProteins](https://github.com/BerensF/ComparingProteins)
 
 
 ## How to...
@@ -61,6 +64,9 @@ Since it creates a single file for each entry, it is advisible to create a separ
 The so created contact files can be further evaluated via `step6_yb_neighbor-search_part2.py` script
 
 **Important note:** the atom types of the sulfur that are supported are: SG, S, SG1, SG2, SD; other types will not be recognised
+
+### Step 7:electrostatics calculations
+***Caution***: prior to starting the script, make sure you downloaded the required script, and then change the paths in the step7-1 to those that are correct for your computer!
 
 :star: If you use this script, please do not forget to cite us:
 Bodnar Y, Lillig CH, 2022, http://rcocf.de/ :star:

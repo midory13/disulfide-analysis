@@ -14,6 +14,7 @@ Collection of Python3 scripts for analysing and comparison of disulfides in oxid
 - [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/)
 - R
 - C++
+- VMD (https://www.ks.uiuc.edu/Research/vmd/) 
 - [MutComp](https://github.com/WillyBruhn/MutComp)
 - [CompareProteins](https://github.com/BerensF/ComparingProteins)
 
@@ -71,6 +72,7 @@ The so created contact files can be further evaluated via `step6_yb_neighbor-sea
 
 ### Step 7:electrostatics calculations
 ***Caution***: prior to starting the script, make sure you downloaded the required script, and then change the paths in the step7-1 to those that are correct for your computer!
+
 The script takes the output from step XXX for the list of PDBs. The name of this file (default: results.txt)  can be specified under `input_file_name` variable. Under variables `path_db` you can specify the folder containing the analysed PDB structures and with `path_out` specify the output folder
 
 

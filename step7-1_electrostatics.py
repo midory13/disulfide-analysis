@@ -28,19 +28,22 @@ parser = PDBParser()
 io = PDBIO()
 
 #####################GLOBAL VARIABLES######################
-path_R ="/home/sysgen/server/user/YB/Experimental/electrostatics_/ComparingProteins_FB/ComparingProteins-master/EMDandClustering/AllLowerB_EMD_Clust.R"
-path_cpp = "/home/sysgen/server/user/YB/Experimental/electrostatics_/ComparingProteins_FB/ComparingProteins-master/LowerBounds/FirstLowerBound/main"
+path_R ="/ComparingProteins_FB/ComparingProteins-master/EMDandClustering/AllLowerB_EMD_Clust.R"
+path_cpp = "/ComparingProteins_FB/ComparingProteins-master/LowerBounds/FirstLowerBound/main"
+path_compare = "/ComparingProteins_FB/ComparingProteins-master/./CompareIsosurfaces.R"
+path_mutcomp = "/PredictingProteinInteractions/Classification/./predictingProteinInteractions.R"
+path_labels = "PredictingProteinInteractions/data/106Test/labels.txt"
 fixing_on = True
 start_time = datetime.now()
 input_file_name = "results"
-chimera = "/home/sysgen/.local/UCSF-Chimera64-1.16/bin/chimera"
+chimera = "/UCSF-Chimera64-1.16/bin/chimera"
 
 input_file_txt = input_file_name + ".txt"
 input_file_pck = input_file_name + ".pkl"
 M = 5
 N = 10
-path_db = "/home/sysgen/server/user/YB/Experimental/MM/Hogg_database/PDB-database/PDB/"
-path_out = "/home/sysgen/server/user/YB/Experimental/MM/Hogg_database/Electrostatics/All-proteins/"
+path_db = "/PDB-database/PDB/"
+path_out = "/Output/"
 ##################################################################
 
 
@@ -167,7 +170,7 @@ def mutcomp(path_to_protein, protein, pdbid):
     output_dir = str(protein + "/")
     directory_out = str(os.path.join(path_out, output_dir))
     index = df[(df.Protein == protein)].index
-    cmd = "Rscript /home/sysgen/server/user/Z_Final_Backups_Alumni/20191217_final_Backup_WLB/PredictingProteinInteractions/Classification/./predictingProteinInteractions.R --mode SingleDistance --doClustering TRUE  --pdb_folder " + path_to_protein + " --doMutComp TRUE --q_val 1 --labels_train /home/sysgen/server/user/Z_Final_Backups_Alumni/20191217_final_Backup_WLB/PredictingProteinInteractions/data/106Test/labels.txt --numberOfPoints 4 --rounds 10 --MutCompOutPut " + directory_out
+    cmd = "Rscript"+ path_mutcomp +  "--mode SingleDistance --doClustering TRUE  --pdb_folder " + path_to_protein + " --doMutComp TRUE --q_val 1 --labels_train"+ path_labels +"--numberOfPoints 4 --rounds 10 --MutCompOutPut " + directory_out
     subprocess.run([cmd], shell=True)
     df.at[index, "MutComp_done"] = int(1)     
     print("Done with electrostatics of "+ protein)
@@ -201,7 +204,7 @@ def compare(path, protein, pdbid):
             os.mkdir(path_out)
         with open(parameter_file, "w") as file:
             file.write("# Parameter file for the clustering of protein by there isosurfaces \n# comments are marked with an '#' \n# '=' is a seperator between paramtername and parameter \n# \n# Full Path to the protein files \nPathToData= " + path_in +" \n# Full path to the directory where the output should be stored \nPathToOutput=" + path_out + "\n# Number of points to select, normally 100 \nn = " + str(N) +" \n# Numbe of of rounds, normaly 500 \nm = " + str(M) + " \n############################################################################################ \n# Path to the program, where the C++ and R code is stored, only change if the file is moved \nPathToRProgram= " + path_R + " \nPathToCPPProgram= "+ path_cpp + " \n################################ \n")
-        subprocess.run(["Rscript /home/sysgen/server/user/YB/Experimental/electrostatics_/ComparingProteins_FB/ComparingProteins-master/./CompareIsosurfaces.R " + parameter_file], shell=True)
+        subprocess.run(["Rscript " + path_compare + " " +parameter_file], shell=True)
         index = df[(df.Protein == protein)].index
         print(index)
         df.at[index, "CompareProteins_done"] = int(1)   

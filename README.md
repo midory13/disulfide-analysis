@@ -73,7 +73,9 @@ The so created contact files can be further evaluated via `step6_yb_neighbor-sea
 ### Step 7:electrostatics calculations
 ***Caution***: prior to starting the script, make sure you downloaded the required script, and then change the paths in the step7-1 to those that are correct for your computer!
 
-The script takes the output from step XXX for the list of PDBs. The name of this file (default: results.txt)  can be specified under `input_file_name` variable. Under variables `path_db` you can specify the folder containing the analysed PDB structures and with `path_out` specify the output folder
+The script takes the output from step 1 for the list of PDBs. The name of this file (default: results.txt)  can be specified under `input_file_name` variable. Under variables `path_db` you can specify the folder containing the analysed PDB structures and with `path_out` specify the output folder.
+
+Be aware, that for large number of proteins, this script would take a long time to process the calculations. Also known issue with VMD and MutComp script: Mutcomp creates images of the calculated electrostatics: the images are done within the GUI of VMD as "screenshots". That means, if at some point you open a window above the working area of the VMD GUI, the screenshot will probaly contain this extra window.
 
 
 :star: If you use this script, please do not forget to cite us:

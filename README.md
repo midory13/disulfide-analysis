@@ -1,6 +1,7 @@
 # disulfide-analysis
-:star: If you use this script, please do not forget to cite us:
-Bodnar Y, Lillig CH, 2023, http://rcocf.de/ :star:
+:star: If you use this script or data, please do not forget to cite us:
+Bodnar Y, Lillig CH, "Cysteinyl and methionyl redox switches: Structural prerequisites and consequences", 2023, Redox Biology, https://doi.org/10.1016/j.redox.2023.102832
+http://rcocf.de/ :star:
 
 Collection of Python3 scripts for analysing and comparison of disulfides in oxidised and reduced proteins.
 ## Software requirements:
@@ -78,5 +79,6 @@ The script takes the output from step 1 for the list of PDBs. The name of this f
 Be aware, that for large number of proteins, this script would take a long time to process the calculations. Also known issue with VMD and MutComp script: Mutcomp creates images of the calculated electrostatics: the images are done within the GUI of VMD as "screenshots". That means, if at some point you open a window above the working area of the VMD GUI, the screenshot will probaly contain this extra window.
 
 
-:star: If you use this script, please do not forget to cite us:
-Bodnar Y, Lillig CH, 2023, http://rcocf.de/ :star:
+:star: If you use this script or data, please do not forget to cite us:
+Bodnar Y, Lillig CH, "Cysteinyl and methionyl redox switches: Structural prerequisites and consequences", 2023, Redox Biology, https://doi.org/10.1016/j.redox.2023.102832
+http://rcocf.de/ :star:
